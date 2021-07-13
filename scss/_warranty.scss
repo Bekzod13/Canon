@@ -1,0 +1,39 @@
+.warranty-wrapper {
+    padding-bottom: 50px;
+}
+
+.tag22 {
+    background-color: #ef2c34;
+    border: 1px solid #ef2c34 !important;
+}
+.tag11 {
+    background-color: #fff;
+    border: 1px solid #d6d6d6 !important;
+}
+.tag111 {
+    border: 1px solid #fff !important;
+}
+
+.tag11:hover > .tag11 {
+    background-color: #ef2c34;
+    border: 1px solid #ef2c34 !important;
+}
+.tag11:hover {
+    background-color: #ef2c34;
+    border: 1px solid #ef2c34 !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .b-content_narrow {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+.faq_item__opener:hover {
+    cursor: pointer;
+}
+.faq_item__opener {
+    font-size: 24px;
+    padding: 20px 0;
+}

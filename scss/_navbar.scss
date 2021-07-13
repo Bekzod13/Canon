@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'GT-Eesti-Pro-Display-Light', Arial, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+    overflow-x: hidden;
+}
+
+/* **************Click Menu************** */
+
+.click_navbar{
+    background: #fff;
+    width: 100%;
+    padding: 12px 0;
+    height: 50px;
+    display: none;
+}
+
+.click_left{
+    display: flex;
+}
+
+.click_cotalog, 
+.click_info{
+    width: 100%;
+    background-color: #ff1920;
+    padding: 10px 20px;
+    color: #fff;
+    margin-top: 10px;
+    position: relative;
+    z-index: 20;
+
+}
+.click_cotalog img,
+.click_info img{
+    transform: rotate(90deg); 
+    width: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.click_cotalog_item{
+    padding: 8px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.click_cotalog_row{
+    background-color: #fff;
+    position: relative;
+    z-index: 20;
+}
+
+
+/* ----------------Menu Scroll----------------------- */
+
+.navbar-for-scroll{
+    padding-top: 12px;
+    width: 100%;
+    height: 66px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+    display: none;
+}
+
+.logo_text{
+    font-size: 28px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    display: none;
+}
+
+.logo_name{
+    color: #000;
+    text-decoration: #000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.catalog-mobile{
+    position: absolute;
+    top: 13px;
+    width: 332px;
+    height: 40px;
+    background: #ff1920;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 10px 20px 10px 70px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.catalog-mobile:hover .drop_down_catalog_items{
+    display: block;   
+    transition: all .5s ease;
+}
+
+.drop_down_catalog_items{
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 40px;
+    padding: 0 0px 10px 0px;
+    display: none;
+    transition: all .5s ease;
+}
+
+.drop_down_catalog_item{
+    font-size: 15px;
+    border-bottom: #ddd 1px solid;
+    padding: 13px 20px 13px 20px;
+}
+
+.drop_down_catalog_item:hover{
+    background-color: #ff1920;
+    color: #FFF;
+}
+
+.drop_down_catalog_item .angle-right{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.drop_down_catalog_item img{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo_text{
+        display: block;
+    }
+    .catalog-mobile{
+        display: none;
+    }
+}
+
+
+.drop_camera_scroll, 
+.drop_obektive_scroll,
+.drop_accessory_scroll,
+.drop_sport_scroll{
+    position: absolute;
+    left: 344px;
+    top: 2px;
+    width: 785px;
+    background: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+    z-index: 15;
+    padding: 30px 30px 10px 30px;
+    transition: all .5s ease;
+    display: none;
+}
+
+#camera_navbar:hover .drop_camera_scroll, 
+#obective_navbar:hover .drop_obektive_scroll,
+#accessory_navbar:hover .drop_accessory_scroll,
+#sport_navbar:hover .drop_sport_scroll{
+    display: flex;
+    color: #000;
+}
+
+.drop_camera_item_scroll{
+    padding: 10px 0px;
+}
+
+.camera_header_scroll{
+    font-weight: 700;
+
+}
+
+.drop_camera_item_scroll p:first-child{
+    margin-top: 20px;
+}
+
+.drop_camera_item_scroll p{
+    font-size: 16px;
+}
+
+
+.click_info_row{
+    display: none;
+}
+
+/* ----------------Menu Scroll End----------------------- */
+
+
+/* ---------------Top Menu-------------------- */
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    padding-top: 24px;
+}
+
+.top_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.head_text{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #000;
+}
+
+.left_nav{
+    position: relative;
+    left: 0;
+}
+
+.right_nav{
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_items_user, 
+.nav_items_search, 
+.nav_items, 
+.nav_items_cart, 
+.nav_items_close,
+.nav_items_like,
+.nav_items_scale,
+.nav_items_heart
+{
+    width: 47px;
+    height: 43px;
+    position: relative;
+    transition: all 300ms ease;
+    background-color: #FBFBFB;
+    margin-left: 20px;
+    padding: 7px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.nav_items_user:hover,
+.nav_items_bar:hover, 
+.nav_items_search:hover, 
+.nav_items:hover,
+.nav_items_cart:hover,
+.nav_items_close:hover
+.nav_items_like:hover,
+.nav_items_scale:hover,
+.nav_items_heart:hover
+{
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .2);
+}
+
+.nav_items_search{
+    background-color: #ff1920;
+}
+
+.nav_items_close{
+    padding: 7px 8px;    
+    display: none;
+}
+
+.number_offer{
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ff1920;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    text-indent: 0;
+}
+
+
+.nav_items_bar{
+    width: 47px;
+    height: 43px;
+    position: relative;
+    transition: all 300ms ease;
+    background-color: #FBFBFB;
+    margin-left: 20px;
+    padding: 10px 8px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+}
+
+/* ------------Top Menu End--------------------- */
+.bottom_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, .2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.drop_down{
+    width: 25%;
+    min-width: none;
+    background-color: #ff1920;
+    text-align: center;
+    padding: 10px 0 10px 60px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.drop_down img{
+    margin-left: 100px;
+    padding: 0;
+    margin-top: -2px;
+    z-index: 10;
+}
+
+.info_middle{
+    width: 55%;
+    background-color: #E4E4E4;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.info_right img{
+    margin: 0 10px;
+    margin-top: -2px;
+}
+
+.info{
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.info:hover .info-drop-down{
+    display: block;
+}
+
+.info:hover, .info-drop-down-item:hover{
+    background: #ccc;
+}
+
+.dropDownItems{
+    background: #FBFBFB;
+    width: 281px;
+    height: 320px;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    left: -60px;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, .2) !important;
+}
+
+#dropDownItems{
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, .2) !important;
+}
+
+.dropDownItem, .dropDownItem2, .dropDownItem3, .dropDownItem4, .dropDownItem5{
+    width: 281px;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    padding: 9px 50px 9px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropDownItem img, .dropDownItem2 img, .dropDownItem3 img, .dropDownItem4 img, .dropDownItem5 img{
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.drop_down:hover .dropDownItems, .dropDownItem2, .dropDownItem3, .dropDownItem4, .dropDownItem5{
+    display: flex;
+    transition: all 1s ease-out;
+}
+
+.dropDownItem:hover, .dropDownItem2:hover, .dropDownItem3:hover, .dropDownItem4:hover, .dropDownItem5:hover{
+    background-color: #ff1920;
+}
+
+.drop_camera, .drop_accessory, .drop_obektive, .drop_sport{
+    display: none;
+    position: absolute;
+    width: 835px;
+    background: #fff;
+    left: 292px;
+    top: 0px;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, .2) !important;
+}
+
+.camera_header{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.dropDownItem2:hover .drop_camera,
+.dropDownItem3:hover .drop_obektive,
+.dropDownItem4:hover .drop_accessory,
+.dropDownItem5:hover .drop_sport{
+    display: flex;
+}
+
+.info-drop-down{
+    text-align: left;
+    position: relative;
+    width: 223px;
+    background-color: #fff;
+    top: 10px;
+    display: none;
+}
+
+.info-drop-down-item{
+    width: 100%;
+    padding: 10px 0px 10px 45px;
+    border-top: 1px #ccc solid;
+    font-size: 15px;
+}
+
+
+/* -------------Media Query--------------- */
+@media screen and (min-width: 768px) {
+    .nav_items_bar{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav_items_bar{
+        display: block;
+    }
+    .nav_items{
+        display: none;
+    }
+    .bottom_menu{
+        display: none;
+    }
+    .logo, .head_text{
+        display: none;
+    }
+}

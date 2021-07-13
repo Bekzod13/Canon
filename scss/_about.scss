@@ -1,0 +1,48 @@
+.about {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.breadcrumbs-list {
+    list-style: none;
+    margin: 0;
+    padding: 30px 0;
+    font-size: 16px;
+    color: #767676;
+}
+.breadcrumbs-list > li {
+    padding: 0 10px;
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+.breadcrumbs-list > li > a {
+    color: #767676;
+    text-decoration: none;
+}
+
+.breadcrumbs-list > li > a::after {
+    position: absolute;
+    content: '/';
+    right: -6px;
+    top: 0;
+    color: #767676;
+}
+
+.page-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: normal;
+}
