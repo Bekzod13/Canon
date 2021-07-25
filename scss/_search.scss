@@ -1,0 +1,89 @@
+body {
+  position: relative;
+}
+.search-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+  transition: 0.5s ease-in-out;
+  top: 0px;
+  right: -5000px;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+}
+.search-container {
+  width: 1200px;
+  padding: 0;
+  z-index: 99;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.search-close-icon {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 100;
+  right: 45px;
+  z-index: 99;
+  top: 25px;
+  color: #23527c;
+}
+.search-div {
+  margin: 40px 0 100px 0;
+  z-index: 99;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ef2c34;
+}
+.search-input {
+  border: none;
+  width: 100%;
+  z-index: 99;
+  outline: none;
+  padding-left: 17px;
+  font-size: 30px;
+}
+.search-side {
+  font-size: 40px;
+  z-index: 99;
+  color: #23527c;
+  padding-right: 17px;
+}
+@media screen and (max-width:1500px ) {
+.search-container {
+width: 1140px;
+}
+}
+@media screen and (max-width:1400px ) {
+.search-container {
+width: 800px;
+}
+}
+@media screen and (max-width:1024px ) {
+.search-container {
+width: 800px;
+}
+.search-div {
+  margin-top: 80px;
+}
+}
+@media screen and (max-width:867px ) {
+.search-container {
+width: 95%;
+}
+}
+@media screen and (max-width:600px ) {
+.search-side {
+padding-right: 0px;
+}
+.search-close-icon {
+  right: 20px;
+}
+.search-div {
+  margin-top: 70px;
+}
+}

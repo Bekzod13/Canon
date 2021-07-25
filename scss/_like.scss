@@ -1,0 +1,42 @@
+/********************** Like ******************/
+.img_container_carusel_like{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.img_carusel_like{
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.05);
+    width: 90%;
+    height: auto;
+    margin: 0 10px;
+    padding: 20px;
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+.img_carusel_like > img{
+    width: 200px;
+    object-fit: cover;
+}
+
+.img_carusel_like:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 1.5px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    }
+
+@media screen and (max-width:1024px) {
+    .img_container_carusel_like{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .img_container_carusel_like{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/********************** Like End ******************/

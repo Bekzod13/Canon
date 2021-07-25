@@ -25,3 +25,410 @@
 
 
 
+@media screen and (max-width: 1174px) {
+    .flexMenu-viewMore {
+        display: block;
+    }
+    .tag7 {
+        display: none;
+    }
+    .tag66 {
+        display: block;
+        border: none;
+    }
+    .tag55 {
+        display: none;
+    }
+    .tag44 {
+        display: none;
+    }
+    .tag33 {
+        display: none;
+    }
+    .tag22 {
+        display: none;
+    }
+    .tag11 {
+        display: none;
+    }
+    .tag00 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1105px) {
+    .tag6 {
+        display: none;
+    }
+    .tag55 {
+        display: block;
+        border: none;
+    }
+}
+@media screen and (max-width: 995px) {
+    .tag5 {
+        display: none;
+    }
+    .tag44 {
+        display: block;
+        border: none;
+    }
+}
+@media screen and (max-width: 915px) {
+    .tag4 {
+        display: none;
+    }
+    .tag33 {
+        display: block;
+        border: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .tag3 {
+        display: none;
+    }
+    .tag22 {
+        display: block;
+        border: none;
+    }
+}
+@media screen and (max-width: 615px) {
+    .tag2 {
+        display: none;
+    }
+    .tag11 {
+        display: block;
+        border: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .tag1 {
+        display: none;
+    }
+    .tag00 {
+        display: block;
+        border: none;
+    }
+}
+
+.main-content-area {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.contacts-section__holder {
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 20px 0 40px 0;
+}
+.contacts-section__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    margin-right: 35px;
+}
+.contacts-section__list {
+    margin-right: 35px;
+}
+.contacts-section__list-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.contacts-section__item {
+    background-color: #fff;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.05);
+    padding: 20px 20px 10px 20px;
+}
+
+.contacts-section__item-holder {
+    padding-left: 30px;
+}
+.contacts-section__item {
+    position: relative;
+}
+.contacts-section__item-icon > i {
+    position: absolute;
+    left: 15px;
+    font-size: 18px;
+}
+.contacts-section__item-phone {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+.contacts-section__item-phone-info {
+    font-size: 13px;
+}
+.ontacts-section__item-holder1 {
+    padding: 17px 0 20px 30px;
+}
+.contacts-section__item-title {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.contacts-section__timetable-head {
+    font-weight: bolder;
+}
+.contacts-section__timetable-head > b {
+    margin-right: 30px;
+}
+.contacts-section__item-holder > b {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts-section__holder {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .contacts-section__left {
+        width: 50%;
+    }
+    .contacts-section__right {
+        width: 50%;
+    }
+    .contacts-section__map > iframe {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .ontacts-section__item-holder1 {
+        padding: 7px 0 10px 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .contacts-section__holder {
+        // flex-direction: column;
+        display: block;
+        padding-bottom: 40px;
+    }
+    .contacts-section__left {
+        width: 100%;
+    }
+    .contacts-section__right {
+        width: 100%;
+    }
+    .contacts-section__map > iframe {
+        width: 100%;
+    }
+    .contacts-section__title {
+        margin-right: 0px;
+    }
+    .contacts-section__list {
+        margin-right: 0px;
+    }
+    .contacts-section__title1 {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 366px) {
+    .contacts-section__item {
+        margin: 5px 0px;
+    }
+    .contacts-section__left {
+        box-sizing: border-box;
+    }
+    .contacts-section__right {
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 356px) {
+    .contacts-section__item {
+        margin: 5px 0px;
+    }
+    .contacts-section__right {
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 354px) {
+    .contacts-section__right {
+        margin-top: 130px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contacts-section__right {
+        margin-top: 150px;
+    }
+}
+
+
+
+
+// --------------------- card ------------------------------
+.ns-content-width1 {
+    padding: 40px 0;
+    height: 100%;
+}
+.consultant-section__title {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 54px;
+}
+.consultants-list {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.consultants-list__item-holder {
+    width: 31%;
+    height: auto;
+    box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 18px;
+}
+.consultants-list__item-img {
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.consultants-list__item-name {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+}
+.consultants-list__item-about {
+    text-align: center;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.consultants-list__item-about {
+    margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+    .consultants-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .consultants-list__item-holder {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .consultants-list__item-img {
+        width: 30%;
+    }
+    .consultants-list__item-name {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .consultants-list__item-name {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .consultants-list__item-img {
+        width: 50%;
+    }
+}
+
+
+// ------------------ 3 buttons ----------------------
+.consultants-btn-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.consultants-btn-a {
+    background-color: #ef2c34;
+    color: #fff;
+    width: 31%;
+    padding: 15px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consultants-btn-a:hover {
+    background-color: #b9090fdf;
+}
+.fa-envelope, .fa-comments {
+    font-size: 20px;
+    margin-right: 15px;
+}
+@media screen and (max-width: 600px) {
+    .consultants-btn-list {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .consultants-btn-a {
+        background-color: #ef2c34;
+        color: #fff;
+        width: 90%;
+        padding: 15px 0;
+        font-size: 16px;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+//----------------------- Canon Plaza -----------------------
+.canon-plaza-cont {
+    margin-top: 80px;
+}
+
+.canon-plaza-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.canon-plaza-text-h2 {
+    margin-bottom: 26px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.canon-plaza-text-p {
+    width: 910px;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.canon-plaza-card-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.canon-plaza-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-image: url('images/np1.png');
+    background-position: center;
+    background-size: cover;
+    // position: relative;
+    font-size: 20px;
+}
+

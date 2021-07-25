@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+
+.wrapper {
+  padding: 20px;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgb(255, 62, 62);
+  }
+  100% {
+    box-shadow: 0 0 0 30px rgba(211, 55, 55, 0);
+  }
+}
+
+.gButton {
+  box-shadow: 0px 0px 2px 7px rgba(235, 230, 178, 0.38);
+  background: #ff1920;
+  border: 1px solid #ff1920;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 50px;
+  margin-right: 70px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}
+
+.showItem1 {
+  background: #ff1920;
+  border: 1px solid #ff1920;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  margin-bottom: 127px;
+  margin-right: 77px;
+  width: 45px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.showItem2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  margin-bottom: 178px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.showItem1:hover {
+  box-shadow: 0 8px 6px 0px rgb(33 33 33 / 20%);
+}
+
+.showItem2:hover {
+  box-shadow: 0 8px 10px 0px rgb(33 33 33 / 20%);
+}
+
+.telegramImg {
+  width: 39px;
+  height: 39px;
+}
+
+/* --------------------------------- Beginning of Modal ----------------------------------------------------- */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 4000;
+  overflow: scroll;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 512px) {
+  .modal-content {
+    width: 100% !important;
+  }
+
+  .header-title {
+    color: #000;
+    letter-spacing: 0.8px;
+    margin-bottom: 7px;
+    font: 700 22px/31px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .header-description {
+    margin: 0 0 10px 0;
+    font: 15px/17px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin-right: 0;
+  border-radius: 0;
+  border-top-width: 0;
+  border: 0.1px solid rgb(231, 226, 226);
+  width: 495px;
+  height: 100vh;
+  border-bottom:solid 6px #ff1920;
+
+}
+
+/* The Close Button */
+.close {
+  position: fixed;
+  top: 12px;
+  right: 25px;
+  width: 29px;
+  height: 29px;
+  padding: 5px 6px;
+  border-radius: 100%;
+  border: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  outline: 0;
+  z-index: 25;
+  background-color: #ff1920;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*  */
+/*  */
+.header-title {
+  color: #000;
+  letter-spacing: 0.8px;
+  margin-bottom: 9px;
+  font: 700 24px/33px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header-description {
+  margin: 0 0 15px 0;
+  font: 15px/17px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+.b24-form-padding-side {
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.b24-form-header {
+  padding: 15px 31px 5px;
+  border-bottom: 1px solid rgba(82, 92, 105, 0.11);
+  text-align: center;
+}
+
+.inputBtn1 {
+  margin: 8px 0;
+  width: 90%;
+  padding-left: 15px;
+  height: 50px;
+  border: 1px solid #bebebe;
+  background: #ededed;
+  border-radius: 5px;
+}
+.inputBtn1:focus {
+  outline: none;
+  /* border: none; */
+  border-color: #ff1920 !important;
+  background: #fff;
+}
+
+.inputBtn1::placeholder {
+  color: gray;
+  font-size: 15px;
+}
+
+.inputBlock {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 5px;
+}
+
+.modal-popup-textarea {
+  margin: 10px 0;
+  width: 90%;
+  height: 50px;
+  border: 1px solid #bebebe;
+  background: #ededed;
+  border-radius: 5px;
+  height: 104px;
+  min-height: 52px;
+  padding-top: 23px;
+}
+
+.checkboxPopup {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  /* width: 400px; */
+  width: 100%;
+  margin-bottom: 15px;
+  -webkit-transition: 200ms ease all;
+  -o-transition: 200ms ease all;
+  transition: 200ms ease all;
+}
+.checkboxLabel {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  cursor: pointer;
+
+}
+.checkboxItemModal {
+  position: relative;
+  left: 25px;
+  top: -5px;
+  width: 26px !important;
+  margin-right: 10px;
+}
+
+.yellowBtnPopup {
+  background: #ff1920;
+  width: 90%;
+  border: 1px solid #ff1920;
+  padding: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  border-radius: 5px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.checkboxLabel::first-line {
+  margin-left: 40px;
+  text-indent: 40px;
+} 
+.checkboxLabel::selection {
+  color: black;
+} 
+
+/* --------------------------------- Beginning of Modal ----------------------------------------------------- */
+.secondModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 4000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  max-width: 100%;
+  /* overflow: scroll; */
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.secondModal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* height: 300px; */
+}
+
+/* The Close Button */
+.secondClose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.secondClose:hover,
+.secondClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
